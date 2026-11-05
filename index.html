@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="Unlock the Vinted Reviewer option through Playful, then rate 4–5 Vinted products." />
+  <title>Become a Vinted Reviewer with Playful</title>
+  <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/72/b0/3d72b0ab-073e-e445-84a7-7cdb2767ea9a/Placeholder.mill/400x400Icon.ApSiOS01-75.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --teal:#007782; --ink:#111; --muted:#5c6b70; --line:#e3e8ea; --bg:#fff; --chip:#e7f4f4; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    [hidden] { display:none !important; }
+    html, body { min-height:100%; background:#f6f8f8; }
+    html { -webkit-tap-highlight-color:transparent; -webkit-text-size-adjust:100%; overscroll-behavior:none; }
+    body { color:var(--ink); font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    button { font:inherit; }
+    button, a, .option, .tt-reply-toggle, .chip, .catalogue { touch-action:manipulation; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; }
+    .tt-text { user-select:text; -webkit-user-select:text; }
+    .option, .cta, .tt-reply-toggle, .chip, .menu { transition:transform 100ms ease-out, background 100ms ease-out, border-color 100ms ease-out; }
+    .option:active, .cta:active, .tt-reply-toggle:active, .chip:active, .menu:active { transform:scale(.97); }
+    .site-header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.94); backdrop-filter:saturate(1.2) blur(12px); padding-top:env(safe-area-inset-top, 0px); border-bottom:1px solid #eef1f2; }
+    .nav { display:flex; align-items:center; justify-content:space-between; max-width:1440px; height:56px; margin:auto; padding:0 16px; }
+    .logo { display:block; height:32px; width:auto; }
+    .menu { width:40px; height:40px; padding:0; border:0; background:transparent; color:#333; }
+    .menu svg { display:block; width:22px; height:16px; margin:auto; }
+    .search-wrap { max-width:1440px; margin:0 auto; padding:0 16px 8px; }
+    .search { display:flex; align-items:center; height:44px; border-radius:8px; background:#eef3f3; overflow:hidden; }
+    .catalogue { display:flex; align-items:center; gap:6px; height:100%; padding:0 12px; border:0; background:transparent; color:#222; font-size:15px; font-weight:600; white-space:nowrap; }
+    .catalogue svg { width:12px; height:12px; }
+    .search-split { width:1px; height:22px; background:#d5dee0; }
+    .search-field { display:flex; align-items:center; gap:8px; flex:1; min-width:0; padding:0 12px; color:#8b989c; font-size:16px; }
+    .search-field svg { width:18px; height:18px; flex:none; }
+    .chips { display:flex; gap:8px; max-width:1440px; margin:0 auto; padding:2px 16px 12px; overflow-x:auto; scrollbar-width:none; }
+    .chips::-webkit-scrollbar { display:none; }
+    .chip { flex:none; height:36px; padding:0 14px; border:1.5px solid #d7dee1; border-radius:999px; background:#fff; color:#222; font-size:14px; font-weight:600; }
+    .chip.on { border-color:var(--teal); background:var(--chip); color:var(--teal); }
+    main { width:min(100%,560px); margin:auto; padding:14px 16px calc(128px + env(safe-area-inset-bottom, 0px)); }
+    .hero-card { position:relative; overflow:hidden; container-type:inline-size; padding:18px 18px 14px; border-radius:24px; color:#fff; background:radial-gradient(circle at 100% 0%,rgba(255,255,255,.28),transparent 40%),var(--teal); }
+    .hero-logos { display:block; width:48px; height:48px; border-radius:12px; }
+    .hero-logos img { width:48px; height:48px; border-radius:12px; display:block; object-fit:cover; background:transparent; clip-path:inset(1px round 12px); }
+    .hero-logos span { display:grid; place-items:center; width:24px; height:24px; border:1px solid rgba(255,255,255,.35); border-radius:50%; color:#fff; font-size:12px; font-weight:800; }
+    .hero-card h1 { margin-top:10px; font-size:clamp(28px,7.2cqi,38px); font-weight:800; line-height:.98; letter-spacing:-.04em; }
+    .unlock-line { margin-top:8px; font-size:15px; font-weight:600; }
+    .card-stats { display:grid; grid-template-columns:1fr 1fr 1fr; margin-top:12px; padding:8px 4px; border-radius:16px; background:rgba(0,0,0,.14); text-align:center; }
+    .card-stats div { padding:0 6px; }
+    .card-stats div + div { border-left:1px solid rgba(255,255,255,.22); }
+    .card-stats strong { display:block; font-size:clamp(16px,4.6cqi,21px); font-weight:800; letter-spacing:-.04em; line-height:1; }
+    .card-stats span { display:block; margin-top:4px; color:rgba(255,255,255,.72); font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    .hero-copy { display:none; margin-bottom:8px; text-align:center; }
+    body.final-state .site-header { display:none; }
+    body.final-state main { padding-top:calc(14px + env(safe-area-inset-top, 0px)); }
+    body.final-state .hero-card { display:none; }
+    body.final-state .hero-copy { display:block; }
+    .hero-copy img { width:52px; height:52px; border-radius:14px; margin:0 auto 10px; }
+    .hero-copy h1 { font-size:clamp(28px,8vw,38px); font-weight:800; line-height:.98; letter-spacing:-.045em; }
+    .hero-copy h1 em { color:var(--teal); font-style:normal; }
+    .hero-copy p { max-width:380px; margin:8px auto 0; color:var(--muted); font-size:15px; line-height:1.35; }
+    .offer { display:none; margin-top:8px; padding:18px; border-radius:24px; color:#fff; background:#10292c; }
+    body.final-state .offer { display:block; }
+    .offer-main { display:flex; align-items:center; gap:14px; }
+    .offer img { width:54px; height:54px; border-radius:14px; flex:0 0 54px; }
+    .offer-copy { flex:1; min-width:0; }
+    .offer-label { color:#7dfff0; font-size:11px; font-weight:700; letter-spacing:.14em; }
+    .offer-title { margin-top:3px; font-size:20px; font-weight:800; letter-spacing:-.03em; }
+    .offer-sub { margin-top:2px; color:rgba(255,255,255,.62); font-size:13px; }
+    .amount { text-align:right; }
+    .amount strong { display:block; color:#7dfff0; font-size:28px; font-weight:800; letter-spacing:-.04em; }
+    .amount span { color:rgba(255,255,255,.45); font-size:10px; font-weight:700; letter-spacing:.12em; }
+    .reserve-bar { display:flex; align-items:center; gap:10px; margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,.12); font-size:13px; font-weight:600; }
+    .reserve-time { min-width:42px; color:#7dfff0; font-variant-numeric:tabular-nums; }
+    .reserve-track { flex:1; height:6px; border-radius:99px; background:rgba(255,255,255,.16); overflow:hidden; }
+    .reserve-fill { display:block; width:100%; height:100%; background:var(--teal); }
+    .quiz { margin-top:16px; }
+    .quiz-meta { display:flex; justify-content:space-between; margin-bottom:10px; color:#111; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    .progress { height:6px; margin-bottom:14px; border-radius:99px; background:#d7e4e4; overflow:hidden; }
+    .progress-fill { width:33%; height:100%; background:var(--teal); transition:width .25s ease; }
+    .quiz h2 { font-size:clamp(24px,6vw,32px); font-weight:800; line-height:1.05; letter-spacing:-.04em; }
+    .quiz-sub { margin-top:6px; color:var(--muted); font-size:14px; }
+    .quiz-context { margin-top:12px; color:#243033; font-size:14px; font-weight:500; line-height:1.45; }
+    .option-badge { margin-left:8px; padding:2px 7px; border-radius:999px; background:var(--chip); color:var(--teal); font-size:10px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
+    .options { display:grid; gap:10px; margin-top:18px; }
+    .option { display:flex; align-items:center; justify-content:space-between; width:100%; padding:16px 18px; border:1.5px solid #d7e0e2; border-radius:18px; color:#111; background:#fff; text-align:left; cursor:pointer; }
+    .option:focus-visible { border-color:var(--teal); outline:0; }
+    @media (hover:hover) and (pointer:fine) { .option:hover { border-color:var(--teal); } }
+    .option-label { display:flex; align-items:center; gap:12px; font-size:16px; font-weight:600; }
+    .radio { width:18px; height:18px; border:2px solid #c5d0d4; border-radius:50%; }
+    .arrow { color:#8b989c; font-size:22px; font-weight:500; }
+    .result-echo { margin:0 0 12px; color:#1a1a1a; font-size:15px; font-weight:700; line-height:1.35; }
+    .final-badge { display:inline-block; margin:8px 0 6px; padding:5px 10px; border-radius:999px; color:var(--teal); background:var(--chip); font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    .section-title { margin:4px 0 10px; font-size:24px; font-weight:800; letter-spacing:-.04em; text-align:left; }
+    .steps { display:grid; gap:8px; }
+    .step { display:flex; align-items:center; gap:12px; padding:10px 12px; border:1px solid var(--line); border-radius:16px; background:#fff; text-align:left; }
+    .step-icon { display:grid; place-items:center; width:44px; height:44px; flex:0 0 44px; border-radius:14px; background:#f3f7f7; }
+    .step-icon svg { width:22px; height:22px; stroke:#123033; }
+    .step-icon img { width:32px; height:32px; border-radius:9px; object-fit:cover; }
+    .step-copy { flex:1; min-width:0; }
+    .step h3 { font-size:16px; font-weight:700; letter-spacing:-.02em; }
+    .step p { margin-top:2px; color:var(--muted); font-size:13px; line-height:1.35; }
+    .step-number { display:grid; place-items:center; width:32px; height:32px; flex:0 0 32px; border-radius:50%; background:var(--teal); color:#fff; font-size:15px; font-weight:800; }
+    .verify { margin-top:12px; padding:12px 14px; border-radius:16px; color:#fff; background:#10292c; text-align:left; }
+    .verify-flag { display:inline-block; margin-bottom:6px; padding:3px 8px; border-radius:999px; background:var(--teal); color:#fff; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .verify p { color:rgba(255,255,255,.78); font-size:13px; font-weight:500; line-height:1.4; }
+    .claim-proof { margin-top:14px; color:#3d4a54; font-size:13px; font-weight:600; line-height:1.35; text-align:center; }
+    .community { margin-top:42px; }
+    .community h2 { margin-bottom:6px; font-size:28px; font-weight:800; letter-spacing:-.04em; text-align:center; }
+    .tt-comments { text-align:left; }
+    .tt-comments-header { display:flex; align-items:center; justify-content:space-between; margin:0 0 16px; }
+    .tt-comments-title { font-size:14px; font-weight:700; color:#111; }
+    .tt-comments-count { font-size:13px; font-weight:600; color:#9a9a9a; }
+    .tt-thread { margin-bottom:4px; }
+    .tt-msg { display:flex; gap:10px; margin-bottom:10px; }
+    .tt-msg.reply { margin-left:42px; }
+    .tt-pfp { width:36px; height:36px; border-radius:50%; flex-shrink:0; display:grid; place-items:center; font-size:13px; font-weight:800; color:#fff; }
+    .tt-msg-body { flex:1; min-width:0; }
+    .tt-user { font-size:14px; font-weight:800; color:#000; letter-spacing:-.02em; }
+    .tt-text { font-size:14px; color:#1a1a1a; line-height:1.45; margin-top:2px; }
+    .tt-proof-img { width:100%; max-width:220px; border-radius:16px; margin-top:8px; display:block; border:1px solid var(--line); }
+    .tt-meta { display:flex; align-items:center; gap:12px; margin-top:6px; }
+    .tt-time, .tt-likes { font-size:12px; color:#9a9a9a; }
+    .tt-likes { display:flex; align-items:center; gap:3px; }
+    .tt-likes svg { width:12px; height:12px; }
+    .tt-reply-toggle { font-size:13px; font-weight:700; color:var(--teal); cursor:pointer; border:none; background:none; padding:0; margin-top:6px; }
+    .tt-replies { display:none; }
+    .tt-replies.open { display:block; margin-top:10px; }
+    .tt-divider { height:1px; background:var(--line); margin:14px 0; }
+    .cta { position:fixed; z-index:30; right:18px; bottom:calc(16px + env(safe-area-inset-bottom, 0px)); left:18px; width:min(100% - 36px,520px); margin:auto; padding:20px; border:0; border-radius:999px; color:#fff; background:var(--teal); font-size:17px; font-weight:800; line-height:1.2; text-align:center; cursor:pointer; }
+    .cta:disabled { opacity:.7; cursor:wait; }
+    footer { max-width:560px; margin:0 auto; padding:8px 16px calc(128px + env(safe-area-inset-bottom, 0px)); color:#9aa3ab; font-size:11px; line-height:1.45; text-align:center; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Vinted">
+      <img class="logo" src="logo.svg" alt="Vinted" />
+      <button class="menu" type="button" aria-label="Menu"><svg viewBox="0 0 22 16" fill="none" aria-hidden="true"><path d="M1 1.5h20M1 8h20M1 14.5h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </nav>
+    <div class="search-wrap">
+      <div class="search">
+        <button class="catalogue" type="button">Catalogue <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.2 4.2 6 8l3.8-3.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <span class="search-split" aria-hidden="true"></span>
+        <div class="search-field"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="M16 16.5 20 20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Search for items</div>
+      </div>
+    </div>
+    <div class="chips" aria-label="Categories">
+      <button class="chip on" type="button">All</button>
+      <button class="chip" type="button">Women</button>
+      <button class="chip" type="button">Men</button>
+      <button class="chip" type="button">Designer</button>
+      <button class="chip" type="button">Kids</button>
+      <button class="chip" type="button">Home</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-logos">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/72/b0/3d72b0ab-073e-e445-84a7-7cdb2767ea9a/Placeholder.mill/400x400Icon.ApSiOS01-75.webp" alt="Vinted" width="48" height="48" />
+        </div>
+        <h1>Become a<br />Vinted Reviewer</h1>
+        <p class="unlock-line">Unlock the reviewer option through Playful, then rate 4–5 Vinted products.</p>
+        <div class="card-stats" aria-label="Reviewer unlock steps">
+          <div><strong>1</strong><span>App install</span></div>
+          <div><strong>5 sec</strong><span>Keep open</span></div>
+          <div><strong>4–5</strong><span>Items to rate</span></div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/72/b0/3d72b0ab-073e-e445-84a7-7cdb2767ea9a/Placeholder.mill/400x400Icon.ApSiOS01-75.webp" alt="Vinted" width="52" height="52" />
+        <h1>You can become a<br /><em>Vinted Reviewer</em></h1>
+        <p>Complete the short Playful unlock step, then rate 4–5 Vinted products.</p>
+      </div>
+    </section>
+    <section class="offer" aria-label="Vinted Reviewer access">
+      <div class="offer-main">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/72/b0/3d72b0ab-073e-e445-84a7-7cdb2767ea9a/Placeholder.mill/400x400Icon.ApSiOS01-75.webp" alt="Vinted" width="54" height="54" />
+        <div class="offer-copy"><div class="offer-label">VINTED REVIEWER</div><div class="offer-title">Reviewer access</div><div class="offer-sub">Unlocked after the Playful app step</div></div>
+        <div class="amount"><strong>4–5</strong><span>ITEMS</span></div>
+      </div>
+      <div class="reserve-bar"><strong>Access held</strong> for: <span class="reserve-time" id="reserve-time">10:00</span><span class="reserve-track"><span class="reserve-fill" id="reserve-fill"></span></span></div>
+    </section>
+    <section class="quiz" id="quiz" aria-live="polite">
+      <div id="quiz-screen">
+        <div class="quiz-meta"><span id="quiz-count">Question 1 of 3</span><span id="quiz-percent">33%</span></div>
+        <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+        <h2 id="quiz-title">What would you review on Vinted?</h2>
+        <p class="quiz-sub" id="quiz-sub">Pick the collection you’d review.</p>
+        <p class="quiz-context" id="quiz-context" hidden></p>
+        <div class="options" id="options"></div>
+      </div>
+      <div class="final" id="final-screen" hidden>
+        <span class="final-badge">Vinted Reviewer access available</span>
+        <p class="result-echo" id="result-echo"></p>
+        <h2 class="section-title">Unlock it in 3 simple steps</h2>
+        <div class="steps">
+          <article class="step"><div class="step-icon"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/ce/a9/6bcea910-1e83-9281-54d6-c7f77b1f0fdb/Placeholder.mill/400x400bb-75.webp" alt="Playful" width="32" height="32" /></div><div class="step-copy"><h3>Sign up to Playful</h3><p>Create your Playful account so the Vinted Reviewer option can be added.</p></div><div class="step-number">1</div></article>
+          <article class="step"><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M10 18.5h4"/></svg></div><div class="step-copy"><h3>Install one app</h3><p>Open the app and leave it running for at least 5 seconds. This completes the unlock step.</p></div><div class="step-number">2</div></article>
+          <article class="step"><div class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 14.2 9H20l-4.6 3.6L17.2 18 12 14.6 6.8 18l1.8-5.4L4 9h5.8L12 3.5z"/></svg></div><div class="step-copy"><h3>Rate 4–5 Vinted products</h3><p>Return to Playful, choose the Vinted Reviewer option and submit your product ratings.</p></div><div class="step-number">3</div></article>
+        </div>
+        <div class="verify">
+          <div class="verify-flag">The important bit</div>
+          <p id="picked-verify">Sign up, install one app, then keep it open for at least 5 seconds. The Vinted Reviewer option unlocks after that step is recorded.</p>
+        </div>
+        <p class="claim-proof">One app unlock step — then the main task is rating 4–5 Vinted products.</p>
+      </div>
+    </section>
+    <section class="community">
+      <h2>Vinted Reviewer Q&amp;A</h2>
+      <div class="tt-comments">
+        <div class="tt-comments-header"><span class="tt-comments-title">Common questions</span><span class="tt-comments-count">How it works</span></div>
+
+        <div class="tt-thread">
+          <div class="tt-msg">
+            <div class="tt-pfp" style="background:#7c3aed">1</div>
+            <div class="tt-msg-body">
+              <div class="tt-user">Is there a long offer list?</div>
+              <div class="tt-text">No. Sign up to Playful, install one app and leave it open for at least 5 seconds. That is the unlock step for the Vinted Reviewer option.</div>
+              <div class="tt-meta"><span class="tt-time">Unlock step</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tt-divider"></div>
+
+        <div class="tt-thread">
+          <div class="tt-msg">
+            <div class="tt-pfp" style="background:#007782">2</div>
+            <div class="tt-msg-body">
+              <div class="tt-user">What do reviewers actually do?</div>
+              <div class="tt-text">Choose the Vinted Reviewer option in Playful and rate 4–5 Vinted products. The product-rating task is the main activity.</div>
+              <div class="tt-meta"><span class="tt-time">Reviewer task</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tt-divider"></div>
+
+        <div class="tt-thread">
+          <div class="tt-msg">
+            <div class="tt-pfp" style="background:#db2777">3</div>
+            <div class="tt-msg-body">
+              <div class="tt-user">Why keep the app open for 5 seconds?</div>
+              <div class="tt-text">Playful needs enough time to record the qualifying app install. Close it too quickly and the reviewer option may not unlock.</div>
+              <div class="tt-meta"><span class="tt-time">Tracking tip</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tt-divider"></div>
+
+        <div class="tt-thread">
+          <div class="tt-msg">
+            <div class="tt-pfp" style="background:#16a34a">4</div>
+            <div class="tt-msg-body">
+              <div class="tt-user">Where does the Vinted option appear?</div>
+              <div class="tt-text">Return to your Playful dashboard after the app step. Once the install is recorded, select the Vinted Reviewer option and follow the rating prompts.</div>
+              <div class="tt-meta"><span class="tt-time">Final step</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <button class="cta" id="cta" type="button" hidden>Install Playful &amp; Earn with Vinted <span aria-hidden="true">→</span></button>
+  <footer>Vinted is a trademark of Vinted, UAB. This promotion is not affiliated with or endorsed by Vinted. Playful eligibility and tracking requirements apply. Must be 18+.</footer>
+  <script>
+    const questions = [
+      { title:'What would you review on Vinted?', sub:'Pick the collection you’d review.', options:["Women's collection","Men's collection",'Designer collection','Kids collection','Home collection'] },
+      { title:'Can you install one app to unlock it?', sub:'This is the step that unlocks Vinted Reviewer.', context:'Sign up to Playful, install one app and leave it open for at least 5 seconds. The Vinted Reviewer option appears once the install is recorded.', badge:true, options:["Yes, I'll install it now",'I can do it later today','I need to read the steps first'] },
+      { title:'How many products can you review?', sub:'After the Vinted Reviewer option is unlocked.', options:['4 products','5 products','Whatever I’m assigned'] }
+    ];
+    const categoryLine = {
+      "Women's collection":"the women’s collection",
+      "Men's collection":"the men’s collection",
+      'Designer collection':'the designer collection',
+      'Kids collection':'the kids collection',
+      'Home collection':'the home collection'
+    };
+    const unlockLine = {
+      "Yes, I'll install it now":"You’ll complete the one-app unlock now.",
+      'I can do it later today':'You’ll complete the one-app unlock later today.',
+      'I need to read the steps first':'You’ll review the three steps before continuing.'
+    };
+    const ratingLine = {
+      '4 products':'You selected 4 product ratings.',
+      '5 products':'You selected 5 product ratings.',
+      'Whatever I’m assigned':'You’re happy to rate whichever 4–5 products are assigned.'
+    };
+    let index = 0;
+    const picks = [];
+    let seconds = 600;
+    const quizScreen = document.getElementById('quiz-screen');
+    const finalScreen = document.getElementById('final-screen');
+    const cta = document.getElementById('cta');
+    function renderQuestion() {
+      const q = questions[index];
+      const pct = Math.round((index + 1) / questions.length * 100);
+      document.getElementById('quiz-count').textContent = 'Question ' + (index + 1) + ' of ' + questions.length;
+      document.getElementById('quiz-percent').textContent = pct + '%';
+      document.getElementById('progress-fill').style.width = pct + '%';
+      document.getElementById('quiz-title').textContent = q.title;
+      document.getElementById('quiz-sub').textContent = q.sub;
+      const context = document.getElementById('quiz-context');
+      context.textContent = q.context || '';
+      context.hidden = !q.context;
+      document.getElementById('options').innerHTML = q.options.map((option, i) => {
+        const badge = q.badge && i === 0 ? '<span class="option-badge">Recommended</span>' : '';
+        return '<button class="option" type="button" data-choice="' + option.replace(/"/g, '&quot;') + '"><span class="option-label"><span class="radio"></span><span>' + option + badge + '</span></span><span class="arrow" aria-hidden="true">›</span></button>';
+      }).join('');
+      document.querySelectorAll('.option').forEach(button => button.addEventListener('click', () => answer(button.getAttribute('data-choice'))));
+    }
+    function answer(choice) {
+      picks[index] = choice;
+      if (index < questions.length - 1) { index += 1; renderQuestion(); return; }
+      const category = categoryLine[picks[0]] || 'Vinted products';
+      const unlock = unlockLine[picks[1]] || 'Complete the one-app Playful unlock first.';
+      const ratings = ratingLine[picks[2]] || 'You’ll rate 4–5 products.';
+      document.getElementById('result-echo').textContent = 'Your reviewer category is ' + category + '. ' + unlock + ' ' + ratings;
+      document.getElementById('picked-verify').textContent = 'Sign up to Playful, install one app and keep it open for at least 5 seconds. Once that install is recorded, return to Playful and select the Vinted Reviewer option to rate 4–5 products.';
+      quizScreen.hidden = true;
+      finalScreen.hidden = false;
+      document.body.classList.add('final-state');
+      cta.hidden = false;
+      cta.innerHTML = 'Install Playful &amp; Earn with Vinted <span aria-hidden="true">→</span>';
+      window.scrollTo(0, 0);
+      cta.onclick = () => {
+        if (cta.disabled) return;
+        cta.disabled = true;
+        cta.textContent = 'Opening Playful…';
+        window.location.href = 'https://vsfall.com/click' + (window.location.search || '');
+      };
+    }
+    function tick() {
+      if (seconds <= 0) return;
+      seconds -= 1;
+      const time = Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
+      document.getElementById('reserve-time').textContent = time;
+      document.getElementById('reserve-fill').style.width = (seconds / 600 * 100) + '%';
+    }
+    document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(other => other.classList.remove('on'));
+        chip.classList.add('on');
+      });
+    });
+    setInterval(tick, 1000);
+    renderQuestion();
+  </script>
+</body>
+</html>
