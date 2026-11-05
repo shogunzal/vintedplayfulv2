@@ -69,9 +69,9 @@
     .offer-label { color:#7dfff0; font-size:11px; font-weight:700; letter-spacing:.14em; }
     .offer-title { margin-top:3px; font-size:20px; font-weight:800; letter-spacing:-.03em; }
     .offer-sub { margin-top:2px; color:rgba(255,255,255,.62); font-size:13px; }
-    .amount { text-align:right; }
+    .amount { text-align:right; flex-shrink:0; }
     .amount strong { display:block; color:#7dfff0; font-size:28px; font-weight:800; letter-spacing:-.04em; }
-    .amount span { color:rgba(255,255,255,.45); font-size:10px; font-weight:700; letter-spacing:.12em; }
+    .amount span { color:rgba(255,255,255,.45); font-size:10px; font-weight:700; letter-spacing:.12em; white-space:nowrap; }
     .reserve-bar { display:flex; align-items:center; gap:10px; margin-top:14px; padding-top:12px; border-top:1px solid rgba(255,255,255,.12); font-size:13px; font-weight:600; }
     .reserve-time { min-width:42px; color:#7dfff0; font-variant-numeric:tabular-nums; }
     .reserve-track { flex:1; height:6px; border-radius:99px; background:rgba(255,255,255,.16); overflow:hidden; }
@@ -180,11 +180,11 @@
         <p>Complete the short Playful unlock step, then rate 4–5 Vinted products.</p>
       </div>
     </section>
-    <section class="offer" aria-label="Vinted Reviewer access">
+    <section class="offer" aria-label="Vinted Reviewer access - Max payout £500">
       <div class="offer-main">
         <img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/72/b0/3d72b0ab-073e-e445-84a7-7cdb2767ea9a/Placeholder.mill/400x400Icon.ApSiOS01-75.webp" alt="Vinted" width="54" height="54" />
         <div class="offer-copy"><div class="offer-label">VINTED REVIEWER</div><div class="offer-title">Reviewer access</div><div class="offer-sub">Unlocked after the Playful app step</div></div>
-        <div class="amount"><strong>4–5</strong><span>ITEMS</span></div>
+        <div class="amount"><strong>£500</strong><span>MAX PAYOUT</span></div>
       </div>
       <div class="reserve-bar"><strong>Access held</strong> for: <span class="reserve-time" id="reserve-time">10:00</span><span class="reserve-track"><span class="reserve-fill" id="reserve-fill"></span></span></div>
     </section>
